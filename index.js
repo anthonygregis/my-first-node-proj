@@ -2,6 +2,7 @@ const myModule = require('./myModule.js')
 const fs = require('fs')
 const http = require('http')
 const moment = require('moment')
+const chalk = require('chalk')
 
 // console.log("Hello World")
 
@@ -33,4 +34,10 @@ const moment = require('moment')
 
 // const myTimer = setInterval(count, 1000)
 
-console.log(moment('01/25/1998').format("dddd [the] Do [of] MMMM [in the year] YYYY"))
+// console.log(moment('01/25/1998').format("dddd [the] Do [of] MMMM [in the year] YYYY"))
+ 
+const error = chalk.black.bgRedBright;
+const warning = chalk.black.bgYellowBright;
+ 
+console.log(error('Error!'));
+console.log(warning('Warning!'));   
